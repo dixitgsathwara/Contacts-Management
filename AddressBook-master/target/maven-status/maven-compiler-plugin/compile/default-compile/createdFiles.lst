@@ -1,0 +1,12 @@
+com\addressbook\helper\ConnectionProvider.class
+com\addressbook\servlet\Edit.class
+com\addressbook\dao\ContactDao.class
+com\addressbook\servlet\LoginServlet.class
+com\addressbook\servlet\Search.class
+com\addressbook\servlet\Upload.class
+com\addressbook\servlet\ListContacts.class
+com\addressbook\servlet\Save.class
+com\addressbook\servlet\Delete.class
+com\addressbook\servlet\Update.class
+com\addressbook\servlet\RegisterServlet.class
+com\addressbook\entity\Contact.class
