@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="AddressBook" />
         <module name="AddressBook-master" />
+        <module name="Contact Management System" />
       </profile>
     </annotationProcessing>
   </component>
