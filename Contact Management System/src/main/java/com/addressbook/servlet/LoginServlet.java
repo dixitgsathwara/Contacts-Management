@@ -12,6 +12,7 @@ import java.io.PrintWriter;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 
 
 @MultipartConfig
@@ -32,19 +33,67 @@ public class LoginServlet extends HttpServlet {
                     "jdbc:mysql://localhost:3306/addressbook", "root", "Dixit1708@");
 
 
-            PreparedStatement stmt = conn.prepareStatement("select * from users where username=? and password=?");
+            PreparedStatement stmt = conn.prepareStatement("select * from users where username='?' and password='?'");
             stmt.setString(1, username);
             stmt.setString(2, password);
 
-            Boolean result = stmt.execute();
+            ResultSet rs = stmt.executeQuery();
 
-            if (result) {
-                HttpSession session=request.getSession();
-                session.setAttribute("uname",username);
-                System.out.println("In if");
+            if (rs.next()) {
+                HttpSession session = request.getSession();
+                session.setAttribute("uname", username);
                 response.sendRedirect(request.getContextPath() + "/index.jsp");
             } else {
-                out.println("error");
+                out.println("<!DOCTYPE html>");
+                out.println("<html>");
+                out.println("<head>");
+                out.println("<title>Error</title>");
+                out.println("<link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css\">");
+                out.println("<style>");
+                out.println(".modal-dialog-custom {");
+                out.println("  max-width: 30%;"); // Adjust width as needed
+                out.println("}");
+                out.println(".modal-content-custom {");
+                out.println("  height: 20%;"); // Adjust height as needed
+                out.println("}");
+                out.println("</style>");
+                out.println("</head>");
+                out.println("<body>");
+
+                out.println("<div class=\"modal fade\" id=\"popupModal\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"popupModalLabel\" aria-hidden=\"true\">");
+                out.println("  <div class=\"modal-dialog modal-dialog-centered modal-dialog-custom\" role=\"document\">");
+                out.println("    <div class=\"modal-content modal-content-custom\">");
+                out.println("      <div class=\"modal-header\">");
+                out.println("        <h5 class=\"modal-title\" id=\"popupModalLabel\">Error</h5>");
+                out.println("        <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\">");
+                out.println("          <span aria-hidden=\"true\">&times;</span>");
+                out.println("        </button>");
+                out.println("      </div>");
+                out.println("      <div class=\"modal-body text-center\">"); // Center-align the message
+                out.println("        User does not exist. Please try again.");
+                out.println("      </div>");
+                out.println("      <div class=\"modal-footer\">");
+                out.println("        <button type=\"button\" class=\"btn btn-secondary\" data-dismiss=\"modal\">Close</button>");
+                out.println("      </div>");
+                out.println("    </div>");
+                out.println("  </div>");
+                out.println("</div>");
+
+                out.println("<script src=\"https://code.jquery.com/jquery-3.5.1.slim.min.js\"></script>");
+                out.println("<script src=\"https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js\"></script>");
+                out.println("<script>");
+                out.println("  $(document).ready(function() {");
+                out.println("    $('#popupModal').modal('show');");
+                out.println("    $('#popupModal').on('hidden.bs.modal', function (e) {");
+                out.println("      window.location.href = 'login.jsp';");
+                out.println("    });");
+                out.println("  });");
+                out.println("</script>");
+
+                out.println("</body>");
+                out.println("</html>");
+
+
             }
 
         } catch (Exception e) {

@@ -1,0 +1,39 @@
+25-Apr-2024 18:35:30.295 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.86
+25-Apr-2024 18:35:30.309 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Feb 14 2024 08:15:12 UTC
+25-Apr-2024 18:35:30.310 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.86.0
+25-Apr-2024 18:35:30.311 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+25-Apr-2024 18:35:30.311 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+25-Apr-2024 18:35:30.311 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+25-Apr-2024 18:35:30.311 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\jdk-19.0.1
+25-Apr-2024 18:35:30.311 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           19.0.1+10-21
+25-Apr-2024 18:35:30.311 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+25-Apr-2024 18:35:30.312 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\Girish Sathvara\Desktop\AddressBook-master (1)\Contact Management System
+25-Apr-2024 18:35:30.312 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\apache-tomcat-9.0.86\apache-tomcat-9.0.86
+25-Apr-2024 18:35:30.343 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+25-Apr-2024 18:35:30.344 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+25-Apr-2024 18:35:30.344 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+25-Apr-2024 18:35:30.344 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+25-Apr-2024 18:35:30.344 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+25-Apr-2024 18:35:30.345 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\apache-tomcat-9.0.86\apache-tomcat-9.0.86
+25-Apr-2024 18:35:30.345 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\Girish Sathvara\Desktop\AddressBook-master (1)\Contact Management System
+25-Apr-2024 18:35:30.346 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\Girish Sathvara\Desktop\AddressBook-master (1)\Contact Management System\temp
+25-Apr-2024 18:35:30.346 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\Girish Sathvara\Desktop\AddressBook-master (1)\Contact Management System\conf\logging.properties
+25-Apr-2024 18:35:30.346 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+25-Apr-2024 18:35:30.346 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.2.4\lib\idea_rt.jar=50567:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.2.4\bin
+25-Apr-2024 18:35:30.348 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dfile.encoding=UTF-8
+25-Apr-2024 18:35:30.348 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dsun.stdout.encoding=UTF-8
+25-Apr-2024 18:35:30.348 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dsun.stderr.encoding=UTF-8
+25-Apr-2024 18:35:30.386 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [C:\jdk-19.0.1\bin;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;C:\Python312\Scripts\;C:\Python312\;C:\Windows\System32;C:\Program Files\Python311\Scripts\;C:\Program Files\Python311\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\MinGW\bin;C:\jdk-19.0.1\bin;C:\Program Files;C:\Winnt;C:\Winnt\System32;C:\Program Files\Java\jre-1.8;C:\Users\Girish Sathvara\AppData\Roaming\Python\Python311\Scripts;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Program Files\MongoDB\Server\7.0\bin;C:\Users\Girish Sathvara\Downloads\apache-maven-3.9.6-bin\apache-maven-3.9.6\bin;C:\Users\Girish Sathvara\Downloads\apache-tomcat-9.0.86;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\Girish Sathvara\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.2.4\bin;;C:\Users\Girish Sathvara\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\JetBrains\PyCharm Community Edition 2021.2.2\bin;;C:\Program Files\Python311\Scripts;C:\Users\Girish Sathvara\AppData\Roaming\npm;C:\Program Files\MongoDB\Server\7.0\bin;C:\Program Files\mongosh\;.]
+25-Apr-2024 18:35:31.481 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+25-Apr-2024 18:35:31.540 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [1892] milliseconds
+25-Apr-2024 18:35:31.677 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+25-Apr-2024 18:35:31.678 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.86]
+25-Apr-2024 18:35:31.719 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [C:\Users\Girish Sathvara\Desktop\AddressBook-master (1)\Contact Management System\conf\Catalina\localhost\AddressBook.xml]
+25-Apr-2024 18:35:32.712 WARNING [main] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [104] milliseconds.
+25-Apr-2024 18:35:32.800 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [C:\Users\Girish Sathvara\Desktop\AddressBook-master (1)\Contact Management System\conf\Catalina\localhost\AddressBook.xml] has finished in [1,080] ms
+25-Apr-2024 18:35:32.846 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+25-Apr-2024 18:35:33.178 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [1630] milliseconds
+25-Apr-2024 18:35:47.389 INFO [Thread-1] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+25-Apr-2024 18:35:47.423 INFO [Thread-1] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+25-Apr-2024 18:35:47.463 INFO [Thread-1] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+25-Apr-2024 18:35:47.472 INFO [Thread-1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
